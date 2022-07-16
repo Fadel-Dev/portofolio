@@ -6,8 +6,12 @@
 }
 
 .container {
-    background:grey;background: #005AA7;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
+    background-color: black;
+  /*  background:url("./images/backgroungGrey.jpg");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+   /* background:grey;background: #005AA7; 
+background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 
 background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     background-size: cover;
@@ -32,6 +36,10 @@ background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, F
 
 .nav {
     flex: 1;
+    color:whitesmoke;
+    background: black;
+    box-shadow: 1px 1pxp 1px grey;
+    border-bottom: 1px solid black;
 }
 
 
@@ -42,6 +50,14 @@ nav ul li {
     flex: 1;
 }
 
+nav ul li a{
+    color: white;
+}
+
+nav ul li a:hover{ 
+    
+background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  
+}
 .cart {
     display: flex;
     justify-items: auto;
@@ -51,6 +67,7 @@ nav ul li {
 .content {
     width: 600px;
     padding: 100px;
+    color: white; 
 }
 
 .description {
@@ -60,10 +77,9 @@ nav ul li {
 .description + p {
     padding: 10px;
     text-align: justify;
-    
+    color: rgb(235, 228, 228);
 }
-
-.container {
+.ntainer {
     position: relative;
 }
 

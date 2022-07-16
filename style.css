@@ -6,12 +6,14 @@
 }
 
 .container {
-    background: url(./images/background.png);
+    background:grey;background: #005AA7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 100vh;
-
 }
 
 .container .navbar {
@@ -61,16 +63,91 @@ nav ul li {
     
 }
 
+.container {
+    position: relative;
+}
 
 .profil {
-    position: relative;
-    bottom: 0;
-    right: 20px;
-    height: 90%;
-    margin-left: 30px;
-    
-   
+    position: absolute;
+    bottom:0;
+    right: 0;
+    width: 60%;
 }
+
+
+
+/*NOS COMPETENCES */
+
+.card {
+    display: flex;
+    align-items: center;
+}
+
+.competenceListe {
+    background: yellow;
+}
+
+
+.competenceListe .card img {
+    border-radius: 100px;
+    border: 2px dotted black;
+    width: 10%;
+}
+
+img+h3{
+    background-color: grey;
+    color: whitesmoke;
+    justify-items: center;
+}
+.competenceListe .card {
+    display: flex;
+}
+
+
+.competenceListe {
+     width: 80%;
+     margin-left: auto;
+     margin-right: auto;
+    background-color: grey;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minMax(500px,auto));
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+/* THE PROJECTS SECTIONS */
+.projectsSectiion {
+    background-color: red;
+}
+
+.projectsSectiion > h3 {
+    color: green;
+    text-align: center;
+}
+.projectsContainer{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minMax(300px,auto));
+    grid-gap:1.3rem;
+}
+section {
+    margin-left:auto;
+    margin-right: auto;
+}
+
+section > h2 {
+    color: grey;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+section > h2:hover{
+    size: 20px;
+}
+
+
 .humburger {
     display: none;
     background: transparent;

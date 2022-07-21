@@ -6,7 +6,10 @@
 }
 
 .container {
-    background-color: black;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: 100%;
+    background-color: rgb(29, 28, 28);
   /*  background:url("./images/backgroungGrey.jpg");*/
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,6 +21,66 @@ background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, F
     background-position: center;
     width: 100%;
     height: 100vh;
+}
+
+/* left*/
+
+.leftContainer {
+background-color: aliceblue;
+   height: 100%;
+   padding-left: 20px;
+}
+img {
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 100px;
+}
+
+.socialNetwork, h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: column;
+}
+.nav ul li a {
+    list-style: none;
+    display: inline-block;
+    color: black;
+}
+
+/*MAIN*/
+
+.content h1{
+    color: whitesmoke;
+    text-align: center;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 20px;
+    
+}
+
+.description + p {
+   
+    
+    font-size: 27px;
+    padding: 10px;
+    text-align: justify;
+    color: rgb(167, 160, 160);
+}
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 3%;
 }
 
 .container .navbar {
@@ -34,7 +97,7 @@ background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, F
     height: 20px;
 }
 
-.nav {
+.header {
     flex: 1;
     color:whitesmoke;
     background: black;
@@ -43,45 +106,44 @@ background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, F
 }
 
 
-nav ul li {
+
+/*SOCIAL NETWORK */
+ul li {
     list-style: none;
     display: inline-block;
-    padding: 20px;
+    padding: 15px 4px;
     flex: 1;
 }
 
-nav ul li a{
-    color: white;
-}
 
-nav ul li a:hover{ 
-    
-background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  
-}
+nav ul li:hover{ 
+    color: white;
+    background-color:#ffffff4a ; 
+    backdrop-filter:blur(5px);   }
 .cart {
     display: flex;
     justify-items: auto;
 
 }
 
-.content {
-    width: 600px;
-    padding: 100px;
-    color: white; 
+
+.content::before {
+   margin: 0;
+   content: url("./images/arrow_back.svg");
+   position:relative; /*or absolute*/
+   left:-90px;
+   top:100px;
+   padding: 10px;
+   background-color:#ffffff1a ; 
+    backdrop-filter:blur(5px); 
 }
+
 
 .description {
     font-size:40px;
 }
 
-.description + p {
-    padding: 10px;
-    text-align: justify;
-    color: rgb(235, 228, 228);
-}
-.ntainer {
-    position: relative;
-}
+
 
 .profil {
     position: absolute;

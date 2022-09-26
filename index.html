@@ -2,84 +2,101 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>   
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>acceuil</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+
+   <title>acceuil</title>
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <h1>fdael</h1>
-        </div>
-        <!--Social Network-->
-        <div class="social">
-      <div class="wrapper">
-        <div class="button">
-           <div class="icon" id="facebook">
-              <i class="fab fa-facebook-f" id="backFacebook"></i>
-           </div>
-        </div>
-        <div class="button">
-           <div class="icon" id="twitter">
-              <i class="fab fa-twitter" id="backTwitter"></i>
-           </div>
-        </div>
-        <div class="button" >
-           <div class="icon"id="instagram">
-              <i class="fab fa-instagram" id="backInsta"></i>
-           </div>
-           </div>
-        <div class="button">
-           <div class="icon" id="git">
-              <i class="fab fa-github" id="backGit"></i>
-           </div>
-        </div>
-        <div class="button">
-           <div class="icon" id="youtub">
-              <i class="fab fa-youtube" id="backYoutub"></i>
-           </div>
-        </div>
-     </div>
-  
-
-        </div>
-        <!--other-->
-        <div class="other">
-            <h1>Other</h1>
-        </div>
-
-    </header>
-    <nav class="menuAcceuil">
-        <ul>
-            <li> <a href="index.html">Acceuil</a></li>
-            <li><a href="portofolio.html">Projets</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li> <a href="contact.html">Contact</a></li>
-            <li><a href="about.html">A propos</a></li>
-        </ul>
-
-    </nav>
-    <main>
-        <div class="mainAcceuil">
-            <div class="presentation">
-                <h1>Hello I ' Fadel5</h1>
-                <span class="infos">Developpeur <span>web</span>  et <span>Ui & Ux</span>  designer</span>
+   <section class="hero">
+      <div class="main-width">
+         <header class="header">
+            <div class="logo">
+               <span>fdael</span>
+            </div>
+            <!--nav-->
             
+            <div class="nav">
+               <nav id="menuAcceuil" class="menu">
+                  <div class="hamb">
+                     <span class="hamburger">EEE</span>
+                  </div>
 
-        </div>
-        <div class="profil">
-            <img src="./images/profil.png" alt="">
-        </div>
+                  <ul class="nav-list">
+                     <li class="list"> <a href="index.html">Acceuil</a></li>
+                     <li class="list"><a id="portoFolio" href="portofolio.html">Projets</a></li>
+                     <li class="list"><a href="services.html">Services</a></li>
+                     <li class="list"><a href="about.html">A propos</a></li>
+                     <li class="list"> <a href="contact.html">Contact Me</a></li>
+                  </ul>
 
-</div>
-       
-    </main>
-    <script src="script.js"></script>
+               </nav>
+            </div>
+         </header>
+
+         <main class="container">
+            <div class="mainAcceuil">
+               <h3 class="homeAnime">Hi ,there</h3>
+               <h1 class="homeAnime">I'm Fadel <span class="ui"></span></h1>
+               <p class="homeAnime">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid veritatis, hic neque, facere, quam
+                  adipisci fugiat quia esse illum nisi amet dignissimos cumque voluptatibus deleniti sapiente? Quod unde
+                  optio laborum!</p> <br>
+                  <button class="homeAnime"><a href="Curriculum Vitae.pdf">Download my cv</a></button> 
+               <div class="social">
+                  <div class="wrapper">
+                     <div class="button">
+                        <div class="icon" id="facebook">
+                           <i class="fab fa-facebook-f" id="backFacebook"></i>
+                        </div>
+                     </div>
+                     <div class="button">
+                        <div class="icon" id="twitter">
+                           <i class="fab fa-twitter" id="backTwitter"></i>
+                        </div>
+                     </div>
+                     <div class="button">
+                        <div class="icon" id="instagram">
+                           <i class="fab fa-instagram" id="backInsta"></i>
+                        </div>
+                     </div>
+                     <div class="button">
+                        <div class="icon" id="git">
+                           <i class="fab fa-github" id="backGit"></i>
+                        </div>
+                     </div>
+                     <div class="button">
+                        <div class="icon" id="youtub">
+                           <i class="fab fa-youtube" id="backYoutub"></i>
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+
+
+         </main>
+         <script src="script.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+         <script>
+             var typed = new Typed(".ui",{
+        strings:["Ui designer","Js Developer"],
+        startDelay: 10,
+        smartBackspace: true,
+        typeSpeed:30,
+        backSpeed:200,
+        loop:true,
+        
+    });
+         </script>
 
 </body>
+</div>
+</section>
 
 </html>

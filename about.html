@@ -7,66 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>   
     <link rel="stylesheet" href="style.css">
-    <title>acceuil</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <title>About</title>
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="logo">
             <h1>XX</h1>
         </div>
-        <!--Social Network-->
-        <div class="social">
-            <div class="wrapper">
-                <div class="button">
-                   <div class="icon" id="facebook">
-                      <i class="fab fa-facebook-f" id="backFacebook"></i>
-                   </div>
-                </div>
-                <div class="button">
-                   <div class="icon" id="twitter">
-                      <i class="fab fa-twitter" id="backTwitter"></i>
-                   </div>
-                </div>
-                <div class="button" >
-                   <div class="icon"id="instagram">
-                      <i class="fab fa-instagram" id="backInsta"></i>
-                   </div>
-                   </div>
-                <div class="button">
-                   <div class="icon" id="git">
-                      <i class="fab fa-github" id="backGit"></i>
-                   </div>
-                </div>
-                <div class="button">
-                   <div class="icon" id="youtub">
-                      <i class="fab fa-youtube" id="backYoutub"></i>
-                   </div>
-                </div>
-             </div>
-        </div>
+
         <!--other-->
-        <div class="other">
-            <h1>Other</h1>
+        <nav id="menuAbout" class="menu">
+        <ul>
+            <li class="list"> <a href="index.html">Acceuil</a></li>
+            <li class="list"><a id="portoFolio" href="portofolio.html">Projets</a></li>
+            <li class="list"><a href="services.html">Services</a></li>
+            <li class="list"><a href="about.html">A propos</a></li>
+            <li class="list"> <a href="contact.html">Contact Me</a></li>
+         </ul>
+        </ul>
+    </nav>
         </div>
 
     </header>
 
-    <nav class="menuAbout">
-        <ul>
-            <li> <a href="index.html">Acceuil</a></li>
-            <li><a href="portofolio.html">Projets</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li> <a href="contact.html">Contact</a></li>
-            <li><a href="about.html">A propos</a></li>
-        </ul>
-        </ul>
-</nav>
+    
 
-    <main>
+    <main class="container">
 
-        <div class="presentation">
-            <h1>About Page</h1>
+        <div class="presentation" id="presentationAbout">
+            <h1 class="firstTitle">About Page</h1>
             <span class="aboutMe">Salut,je suis Fadel Diop,developpeur web et ui&ux designer.je suis developpeur web/mobile et designer
                 ,tres passionne je fais de l integration web , developement d apllication web et mobile(native
                 android).Je suis tres content d accompagner les entrepreuneurs a marquer leur presence en ligne par la
@@ -77,10 +48,6 @@
             <div class="infosAbout">
                 <h1>Quelques informations me concernant</h1>
             </div>
-            <div class="profil">
-                <img src="./images/profil.png" alt="">
-            </div>
-            
         </div>
         
     </main>

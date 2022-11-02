@@ -34,7 +34,7 @@
                      <li class="list"> <a href="index.html">Acceuil</a></li>
                      <li class="list"><a id="portoFolio" href="portofolio.html">Projets</a></li>
                      <li class="list"><a href="services.html">Services</a></li>
-                     <li class="list"><a href="about.html">A propos</a></li>
+                     <li class="list"><a style="color: #D46464" href="about.html">A propos</a></li>
                      <li class="list"> <a href="contact.html">Contact Me</a></li>
                   </ul>
 
@@ -44,31 +44,24 @@
 
          <div class="container">
             <div class="mainAcceuil">
-                <div class="presentation" id="presentationAbout">
-                    <h1 class="firstTitle">About Page</h1>
-                    <span class="aboutMe">Salut,je suis Fadel Diop,developpeur web et ui&ux designer.je suis developpeur web/mobile et designer
-                        ,tres passionne je fais de l integration web , developement d apllication web et mobile(native
-                        android).Je suis tres content d accompagner les entrepreuneurs a marquer leur presence en ligne par la
-                        contruction de leurs pages de presentation de sevices etc...</span>
-                </div>
-        
-                <div class="menu">
-                    <div class="infosAbout">
-                        <h1>Quelques informations me concernant</h1>
-                    </div>
-                </div>  <div class="presentation" id="presentationAbout">
-                    <h1 class="firstTitle">About Page</h1>
-                    <span class="aboutMe">Salut,je suis Fadel Diop,developpeur web et ui&ux designer.je suis developpeur web/mobile et designer
-                        ,tres passionne je fais de l integration web , developement d apllication web et mobile(native
-                        android).Je suis tres content d accompagner les entrepreuneurs a marquer leur presence en ligne par la
-                        contruction de leurs pages de presentation de sevices etc...</span>
-                </div>
-        
-                <div class="menu">
-                    <div class="infosAbout">
-                        <h1>Quelques informations me concernant</h1>
-                    </div>
-                </div>
+               <div class="menu">
+                  <div class="infosAbout">
+                     <h1>Quelques informations me concernant</h1>
+                  </div>
+               </div>
+               <div class="presentation" id="presentationAbout">
+
+                  <span class="aboutMe">Salut,je suis Fadel Diop,developpeur web et ui&ux designer.je suis developpeur
+                     web/mobile et designer
+                     ,tres passionne je fais de l integration web , developement d apllication web et mobile(native
+                     android).Je suis tres content d accompagner les entrepreuneurs a marquer leur presence en ligne par
+                     la
+                     contruction de leurs pages de presentation de sevices etc...</span>
+               </div>
+
+
+
+
                <div class="social">
                   <div class="wrapper">
                      <div class="button">
@@ -118,7 +111,18 @@
          </script>
 
       </div>
-</section>
+   </section>
 </body>
+<script>
+   var typed = new Typed(".infosAbout", {
+      strings: [ "Quelques informations me concernant"],
+      startDelay: 2,
+      smartBackspace: true,
+      typeSpeed: 50,
+      backSpeed: 100,
+      loop: true,
+
+   });
+</script>
 
 </html>

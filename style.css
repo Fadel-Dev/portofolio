@@ -479,18 +479,25 @@ img{
     right: 0%;
     bottom: 0;
     margin: 0;
-    width: 50%;
+    /* width: 10%; */
     padding:0px 5%;
-    height: 50vh;
+    height: 10%;
   transition: .3s right;
   border-radius:10px ;
     z-index: 2;
-    background-color: var(--main-color);
+    background-color: rgba(148, 34, 34, 0.548);
+  
   }
 
   nav .nav-list li {
     
   }
+.menuImg {
+  width: 40px;
+  margin-bottom: 40%;
+  
+}
+
   nav li{
     display: block;
     padding-left: 20px;

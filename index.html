@@ -2,107 +2,323 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
-
-   <title>acceuil</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 
-<body>
-   <section class="hero">
-      <div class="main-width">
-         <header class="header">
+<body id="home">
+    <header class="container">
+        <div class="menu">
             <div class="logo">
-               <span>fdael</span>
+                <span>Logo</span>
             </div>
-            <!--nav-->
-
-            <div class="nav">
-               <nav id="menuAcceuil" class="menu">
-                  <div class="hamb">
-                     <span class="hamburger">
-                        <img class="menuImg" src="./images/menu-icon-x.svg" alt="">
-                     </span>
-                  </div>
-
-                  <ul class="nav-list">
-                     <li class="list"> <a style="color: #D46464" href="index.html">Acceuil</a></li>
-                     <li class="list"><a id="portoFolio" href="portofolio.html">Projets</a></li>
-                     <li class="list"><a href="services.html">Services</a></li>
-                     <li class="list"><a href="about.html">A propos</a></li>
-                     <li class="list"> <a href="contact.html">Contact Me</a></li>
-                  </ul>
-
-               </nav>
-            </div>
-         </header>
-
-         <div class="container">
-            <div class="mainAcceuil">
-               <h1 class="homeAnime">Hi ,there</h1>
-               <h3 class="homeAnime">I'm Fadel <span class="ui"  style="color: #D46464;font-size: x-large;"></span></h3>
-               <p class="homeAnime">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid veritatis, hic
-                  neque, facere, quam
-                  adipisci fugiat quia esse illum nisi amet dignissimos cumque voluptatibus deleniti sapiente? Quod unde
-                  optio laborum!</p> <br>
-               <a href="CurriculumVitae.pdf">
-                  <button class="homeAnime">Download my cv</button>
-               </a>
-               <div class="social">
-                  <div class="wrapper">
-                     <div class="button">
-                        <div class="icon" id="facebook">
-                          <a href="https://web.facebook.com/profile.php?id=100009422180215"> <i class="fab fa-facebook-f" id="backFacebook"></i></a>
-                        </div>
-                     </div>
-                     <div class="button">
-                        <div class="icon" id="twitter">
-                           <a href="https://twitter.com/FadelDiop7"><i class="fab fa-twitter" id="backTwitter"></i></a>
-                        </div>
-                     </div>
-                     <div class="button">
-                        <div class="icon" id="instagram">
-                          <a href="https://www.instagram.com/fadel_deve/"> <i class="fab fa-instagram" id="backInsta"></i></a>
-                        </div>
-                     </div>
-                     <div class="button">
-                        <div class="icon" id="git">
-                          <a href="https://github.com/Fadel-Dev"> <i class="fab fa-github" id="backGit"></i></a>
-                        </div>
-                     </div>
-                     <!-- <div class="button">
-                        <div class="icon" id="youtub">
-                           <i class="fab fa-youtube" id="backYoutub"></i>
-                        </div>
-                     </div> -->
-                  </div>
-
-               </div>
+            <div class="menuContainer">
+                <ul id="ulMenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portofolio">Portofolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li id="fermer"><i class="fa-solid fa-x"></i></li>
+                </ul>
+                <h1 id="ouvrir">ouvrir</h1>
+                <!-- <i id="ouvrir" class="fa-sharp fa-solid fa-bars"></i> -->
             </div>
 
+        </div>
+        <div class="header-text" >
+            <h1>fadel dev a little limb</h1>
+        </div>
+    </header>
+    <!-- ABOUT -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/profil.png" alt="">
+                </div>
 
-         </div>
-         <script src="script.js"></script>
-         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-         <script>
-            var typed = new Typed(".ui", {
-               strings: ["Ui designer", "Js Developer"],
-               startDelay: 10,
-               smartBackspace: true,
-               typeSpeed: 30,
-               backSpeed: 200,
-               loop: true,
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt beatae quam nihil porro minus
+                        architecto facere,
+                        eaque voluptates! Doloribus laboriosam quos animi praesentium ullam accusantium at! Asperiores
+                        aliquid tempore
+                        molestiae.
+                    </p>
+                    <div class="tab-titles" onclick="opentab('skills')">
+                        <p class="tab-links active-link">
+                            Skills
+                        </p>
+                        <p class="tab-links" onclick="opentab('experience')">
+                            Experience
+                        </p>
+                        <p class="tab-links" onclick="opentab('education')">
+                            Education
+                        </p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span> <br>Designing Web/App intrfaces</li>
+                            <li><span>Web Developpement</span> <br>Web app Developpement</li> <br>
+                            <li><span>Mobile Developpement</span> <br>Mobile app Developpement</li>
 
-            });
-         </script>
+                        </ul>
+                    </div>
+                    <!-- experience -->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>ht</span> <br>BAC</li>
+                            <li><span>ht</span> <br>Informatique</li> <br>
+                            <li><span>ht</span> <br>Bachlor</li>
 
-      </div>
-</section>
+                        </ul>
+                    </div>
+                    <!-- education -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019</span> <br>BAC</li>
+                            <li><span>2020</span> <br>Informatique</li> <br>
+                            <li><span>2022</span> <br>Bachlor</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portofolio">
+        <div class="container">
+            <div class="img">
+                <img src="./image/Capture d’écran de 2022-12-06 16-46-47.png" alt="">
+            </div>
+            <div class="competences">
+                <h2>Mes competences</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem in veritatis amet at cumque fugiat
+                    explicabo a eius
+                    voluptas, ipsa possimus earum unde exercitationem reiciendis dicta impedit nesciunt natus
+                    dignissimos reprehenderit
+                    doloribus?
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="projet">
+        <div class="container">
+
+        </div>
+    </div>
+
+    <!-- SERVICE -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis unde quos, ut accusamus, aperiam
+                        eum impedit minus culpa,
+                        dicta asperiores delectus eligendi sit illum quaerat laudantium temporibus praesentium itaque
+                        tempora possimus atque.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>Web Design</h2>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis unde quos, ut accusamus, aperiam
+                        eum impedit minus culpa,
+                        dicta asperiores delectus eligendi sit illum quaerat laudantium temporibus praesentium itaque
+                        tempora possimus atque.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-apple-pay"></i>
+                    <h2>Web Design</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis unde quos, ut accusamus, aperiam
+                        eum impedit minus culpa,
+                        dicta asperiores delectus eligendi sit illum quaerat laudantium temporibus praesentium itaque
+                        tempora possimus atque.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PORTOFOLIO -->
+
+    <!-- PORTOFOLIO -->
+    <div id="portofolio">
+        <div class="container">
+            <h1 class="sub-title">Mes Projets</h1>
+            <div class="work-list">
+                <div>
+                    <div class="work">
+                        <img src="https://cdn.pixabay.com/photo/2019/03/22/08/35/cyber-security-4072710__340.jpg"
+                            alt="">
+                        <div class="layer">
+                            <h3>first app</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas tenetur, in atque
+                                voluptate sunt, quas animi libero aliquid, obcaecati sequi praesentium. Tempore,
+                                voluptas
+                                minima.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="work">
+                        <img src="https://cdn.pixabay.com/photo/2019/03/22/08/35/cyber-security-4072710__340.jpg"
+                            alt="">
+                        <div class="layer">
+                            <h3>first app</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas tenetur, in atque
+                                voluptate sunt, quas animi libero aliquid, obcaecati sequi praesentium. Tempore,
+                                voluptas
+                                minima.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="work">
+                        <img src="https://cdn.pixabay.com/photo/2019/03/22/08/35/cyber-security-4072710__340.jpg"
+                            alt="">
+                        <div class="layer">
+                            <h3>first app</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas tenetur, in atque
+                                voluptate sunt, quas animi libero aliquid, obcaecati sequi praesentium. Tempore,
+                                voluptas
+                                minima.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                   
+                </div>
+
+            </div>
+            <a class="button" href="#">See more</a>
+        </div>
+    </div>
+<!-- CONTACT -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="subt-title">Contact Me</h1>
+                        <p>exemple@gmail.com</p>
+                        <p>778650096</p>
+                        <div class="social-icons">
+                           
+                                
+                                        <a href="https://web.facebook.com/profile.php?id=100009422180215"> <i class="fab fa-facebook-f" id="backFacebook"></i></a>
+                                   
+                                   
+                                         <a href="https://twitter.com/FadelDiop7"><i class="fab fa-twitter" id="backTwitter"></i></a>
+                                   
+                                        <a href="https://www.instagram.com/fadel_deve/"> <i class="fab fa-instagram" id="backInsta"></i></a>
+                                     
+                                        <a href="https://github.com/Fadel-Dev"> <i class="fab fa-github" id="backGit"></i></a>
+                                     
+                    
+                               
+                        </div>
+                        <a class="btn btn2" href="./images/Curriculum V.docx">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" id="">
+                            <input type="email" name="email" id="">
+                            <textarea name="Message" id="" rows="6">Your Message</textarea> <br>
+                            <button class="btn btn2" type="submit">Envoyer</button>
+                        </form>
+                    </div>
+                       
+                </div>
+            </div>
+        </div>
+
+
+    <!-- FOOTRE -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>About Me</h3>
+                    <p>Learn more about me and my work.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+                <div class="col-md-4">
+                    <h3>Contact Me</h3>
+                    <p>Get in touch with me via email or social media.</p>
+                    <a href="#" class="btn btn-primary">Contact Me</a>
+                </div>
+                <div class="col-md-4">
+                    <h3>Follow Me</h3>
+                    <p>Follow me on social media to stay up to date on my work.</p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+    </footer>
+
 </body>
+
+<script>
+    let fermer = document.getElementById("fermer");
+    let ouvrir = document.getElementById("ouvrir");
+    let ulMenu = document.getElementById("ulMenu");
+
+
+    ouvrir.addEventListener("click", () => {
+        ulMenu.style.right = 0;
+        console.log(":yes");
+        ouvrir.style.visibility = "hidden"
+    });
+    fermer.addEventListener("click", () => {
+        ulMenu.style.right = -300 + "px";
+        ouvrir.style.visibility = "visible"
+    })
+
+    // ABOUT ME
+
+    let tablinks = document.getElementById("tab-links");
+    let tabcontents = document.getElementById("tab-contents");
+
+
+    function opentab(tabname) {
+        for (let tablink of tablinks) {
+            tablink.classList.remove("active-link")
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab")
+        }
+    }
+
+</script>
 
 </html>

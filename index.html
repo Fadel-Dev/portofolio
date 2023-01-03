@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
@@ -33,7 +35,8 @@
 
         </div>
         <div class="header-text" >
-            <h1>fadel dev a little limb</h1>
+            <h1 class="hi">Hi ,there</h1>
+            <h3 class="homeAnime">I'm Fadel <span class="ui"></span></h3>
         </div>
     </header>
     <!-- ABOUT -->
@@ -41,7 +44,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <!-- <img src="./images/profil.png" alt=""> -->
+                    <img src="./images/profil.png" alt="">
                 </div>
 
                 <div class="about-col-2">
@@ -123,7 +126,7 @@
         <div class="container">
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
-                <div>
+                <div class="cardService">
                     <i class="fa-solid fa-code"></i>
                     <h2>Web Design</h2>
                     <p>
@@ -134,7 +137,7 @@
                     </p>
                     <a href="#">Learn more</a>
                 </div>
-                <div>
+                <div class="cardService">
                     <i class="fa-solid fa-pen-nib"></i>
                     <h2>Web Design</h2>
 
@@ -146,7 +149,7 @@
                     </p>
                     <a href="#">Learn more</a>
                 </div>
-                <div>
+                <div class="cardService">
                     <i class="fa-brands fa-apple-pay"></i>
                     <h2>Web Design</h2>
                     <p>
@@ -169,7 +172,7 @@
             <div class="work-list">
                 <div>
                     <div class="work">
-                        <!-- <img src="https://cdn.pixabay.com/photo/2019/03/22/08/35/cyber-security-4072710__340.jpg"  alt="">-->
+                        <img src="https://cdn.pixabay.com/photo/2019/03/22/08/35/cyber-security-4072710__340.jpg"  alt="">
                            
                         <div class="layer">
                             <h3>first app</h3>
@@ -184,7 +187,7 @@
 
                 <div>
                     <div class="work">
-                        <!-- <img src="https://cdn.pixabay.com/photo/2019/03/22/08/35/cyber-security-4072710__340.jpg"  alt=""> -->
+                        <img src="https://cdn.pixabay.com/photo/2019/03/22/08/35/cyber-security-4072710__340.jpg"  alt="">
                            
                         <div class="layer">
                             <h3>first app</h3>
@@ -199,7 +202,7 @@
 
                 <div>
                     <div class="work">
-                        <!-- <img src="https://cdn.pixabay.com/photo/2019/03/22/08/35/cyber-security-4072710__340.jpg"  alt=""> -->
+                        <img src="https://cdn.pixabay.com/photo/2019/03/22/08/35/cyber-security-4072710__340.jpg"  alt="">
                         
                         <div class="layer">
                             <h3>first app</h3>
@@ -287,8 +290,20 @@
     </footer>
 
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script>
+// Animation
+
+var typed = new Typed(".ui", {
+               strings: ["Full stack developer", "Web /Mobile App"],
+               startDelay: 10,
+               smartBackspace: true,
+               typeSpeed: 30,
+               backSpeed: 200,
+               loop: true,
+
+            });
+
     let fermer = document.getElementById("fermer");
     let ouvrir = document.getElementById("ouvrir");
     let ulMenu = document.getElementById("ulMenu");
@@ -320,6 +335,8 @@
             tabcontent.classList.remove("active-tab")
         }
     }
+
+    
 
 </script>
 

@@ -19,7 +19,7 @@ body{
     margin: auto;
 }
 header {
-    background: url(./images/profil.png);
+    /* background: url(./images/profil.png); */
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
@@ -338,8 +338,27 @@ border-radius: 6px;
 /* MEDIA QUERY */
 
 @media only screen and (max-width:600px) {
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       
+    }
     body{
-        /* background-color: red; */
+        width: 100vw;
+        left: 0;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
     }
     
     .menuContainer {
@@ -355,6 +374,8 @@ border-radius: 6px;
         padding: 20px;
         height: 100vh;
         -webkit-backdrop-filter: blur(5px);
+        display: none;
+    
     }
     ul li a {
         color: rgb(219, 70, 70);
@@ -366,7 +387,7 @@ border-radius: 6px;
 
     #ulMenu{
         position: absolute;
-        right: -200px;
+        right: 0;
         transition: 1s;
     
     }
@@ -388,7 +409,7 @@ border-radius: 6px;
 
 
 /* FOOTER */
-footer {
+/* footer {
     background-color: #333;
     color: #fff;
     padding: 50px 0;
@@ -426,7 +447,7 @@ footer {
   
   footer .list-inline li {
     margin-right: 10px;
-  }
+  } */
   
-  footer .list-inline li a {
+ 
   

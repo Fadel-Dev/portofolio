@@ -27,8 +27,8 @@
                     <li><a href="#contact">Contact</a></li>
                     <li id="fermer"><i class="fa-solid fa-x"></i></li>
                 </ul>
-                <h1 id="ouvrir">ouvrir</h1>
-                <!-- <i id="ouvrir" class="fa-sharp fa-solid fa-bars"></i> -->
+                <!-- <h1 id="ouvrir">ouvrir</h1> -->
+                <i id="ouvrir" class="fa-sharp fa-solid fa-bars"></i>
             </div>
 
         </div>
@@ -41,7 +41,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="./images/profil.png" alt="">
+                    <!-- <img src="./images/profil.png" alt=""> -->
                 </div>
 
                 <div class="about-col-2">
@@ -169,8 +169,8 @@
             <div class="work-list">
                 <div>
                     <div class="work">
-                        <img src="https://cdn.pixabay.com/photo/2019/03/22/08/35/cyber-security-4072710__340.jpg"
-                            alt="">
+                        <!-- <img src="https://cdn.pixabay.com/photo/2019/03/22/08/35/cyber-security-4072710__340.jpg"  alt="">-->
+                           
                         <div class="layer">
                             <h3>first app</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas tenetur, in atque
@@ -184,8 +184,8 @@
 
                 <div>
                     <div class="work">
-                        <img src="https://cdn.pixabay.com/photo/2019/03/22/08/35/cyber-security-4072710__340.jpg"
-                            alt="">
+                        <!-- <img src="https://cdn.pixabay.com/photo/2019/03/22/08/35/cyber-security-4072710__340.jpg"  alt=""> -->
+                           
                         <div class="layer">
                             <h3>first app</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas tenetur, in atque
@@ -199,8 +199,8 @@
 
                 <div>
                     <div class="work">
-                        <img src="https://cdn.pixabay.com/photo/2019/03/22/08/35/cyber-security-4072710__340.jpg"
-                            alt="">
+                        <!-- <img src="https://cdn.pixabay.com/photo/2019/03/22/08/35/cyber-security-4072710__340.jpg"  alt=""> -->
+                        
                         <div class="layer">
                             <h3>first app</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas tenetur, in atque
@@ -298,10 +298,12 @@
         ulMenu.style.right = 0;
         console.log(":yes");
         ouvrir.style.visibility = "hidden"
+        ulMenu.style.display="block"
     });
     fermer.addEventListener("click", () => {
         ulMenu.style.right = -300 + "px";
         ouvrir.style.visibility = "visible"
+        ulMenu.style.display="none"
     })
 
     // ABOUT ME

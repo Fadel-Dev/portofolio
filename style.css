@@ -4,6 +4,49 @@
     box-sizing: border-box;
 }
 
+
+
+#element1 {
+    position: absolute;
+    z-index: 2;
+ }
+ 
+ #element2 {
+    position: absolute;
+    z-index: 1;
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 html {
     scroll-behavior: smooth;
     transition: 5s;
@@ -32,7 +75,7 @@ body{
         color: #ff004f
     }
 header {
-    background: url(./images/profil.png);
+    background: url(./images/fadel2.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
@@ -505,6 +548,7 @@ border-radius: 6px;
     padding: 0 40px;
     text-align: center;
     transition: height 0.6s;
+    margin-left: 0%;
     
 }
 

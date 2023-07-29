@@ -16,37 +16,6 @@
     z-index: 1;
  }
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 html {
     scroll-behavior: smooth;
     transition: 5s;
@@ -118,7 +87,7 @@ ul li a::after{
     content: "";
     width: 0%;
     height: 2px;
-    background-color: #ff004f;
+    background-color: #443d3f;
    left: 0;
    
     
@@ -156,9 +125,8 @@ ul li a:hover{
 }
 
 
-#about {
-    padding: 77px 0;
-    color: #ababab;
+#about h1 {
+    color:#ff004f;
 }
 
 .row {
@@ -198,8 +166,16 @@ ul li a:hover{
     font-weight: 500;
     cursor: pointer;
 }
+.tab {
+    display: none;
+  }
+  .active-link {
+    font-weight: bold;
+    color: #ff004f;
+    /* Ajoutez ici d'autres styles pour les liens actifs */
+  }
 
-.tab-links::after {
+/* .active-link::after {
     position: absolute;
     content: '';
     width: 0;
@@ -208,7 +184,7 @@ ul li a:hover{
     left: 0;
     bottom: -8px;
     transition: 0.7s;
-}
+} */
 .tab-links.active-link::after {
     width: 3%;
 }
@@ -216,12 +192,15 @@ ul li a:hover{
     width: 10%;
 }
 .tab-contents ul li {
-    list-style: none;
+    
     margin: 10px 0;
 }
-.tab-contents ul li span {
+.tab h2{
     color: #ff004f;
-    font-size: 14px;
+    font-size: 18px;
+}
+ .tt{
+    margin-left: 22px;
 }
 .tab-contents {
     display: none;
@@ -232,6 +211,8 @@ ul li a:hover{
 }
 
 /* SERVICES */
+
+
 
 #services {
     padding: 3px 0;
@@ -282,8 +263,9 @@ display: inline-block;
 
 /* PORTOFOLIO */
 
-#portofolio {
-    padding: 50px 0;
+#portofolio h2{
+    /* padding: 50px 0; */
+    color: #ff004f;
 }
 
 .work-list {
@@ -552,8 +534,10 @@ border-radius: 6px;
     
 }
 
+
+
 .layer ,a {
-    padding-top: 10%;
+    /* padding-top: 10%; */
 }
 
 .work:hover img {

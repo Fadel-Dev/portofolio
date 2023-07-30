@@ -12,18 +12,30 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <style>
-        /* CSS pour les onglets */
-        .tab {
-          display: none;
+    <style>
+        .contact-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
         }
-        
-        .active-link {
-          font-weight: bold;
-          color: blue;
-          /* Ajoutez ici d'autres styles pour les liens actifs */
+
+        .contact-link {
+            padding: 20px 30px;
+            background-color: #ff004f;
+            color: #fff;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
         }
-        </style> -->
+
+        .contact-link:hover {
+            background-color: #ff0051dc;
+            cursor: pointer;
+            border: 1px solid #ff004f;
+        }
+    </style>
 </head>
 
 <body id="home">
@@ -194,7 +206,7 @@ FreeCodeCamp.org Responsive-Web-Design 300hours
             <div class="work-list">
                 <div>
                     <div class="work">
-                        <img src="https://cdn.pixabay.com/photo/2019/03/22/08/35/cyber-security-4072710__340.jpg"  alt="">
+                        <img src="images/mobile.svg"  alt="">
 <a href="mobile.html"></a>                           
                         <div class="layer">
                             <h3>Gestion De Portefeuille</h3> <br>
@@ -206,7 +218,7 @@ FreeCodeCamp.org Responsive-Web-Design 300hours
 
                 <div>
                     <div class="work">
-                      <a href="https://vanillajs221.com"><img src="https://cdn.pixabay.com/photo/2019/03/22/08/35/cyber-security-4072710__340.jpg"  alt=""></a>  
+                      <a href="https://vanillajs221.com"><img src="images/web.svg"  alt=""></a>  
                            
                         <div class="layer">
                             <h3>Start-Up VanillaJs/221</h3>
@@ -218,7 +230,7 @@ FreeCodeCamp.org Responsive-Web-Design 300hours
 
                 <div>
                     <div class="work">
-                        <img src="https://cdn.pixabay.com/photo/2019/03/22/08/35/cyber-security-4072710__340.jpg"  alt="">
+                        <img src="images/Noflay.svg"  alt="">
                         
                         <div class="layer">
                             <h3>Plateforme Noflay</h3>
@@ -240,20 +252,22 @@ FreeCodeCamp.org Responsive-Web-Design 300hours
             <div class="container">
                 <div class="row">
                     <div class="contact-left">
-                        <h1 class="subt-title">Contact Me</h1>
-                        <p>exemple@gmail.com</p>
-                        <p>778650096</p>
+                        <h1 class="subt-title">Contactez Moi</h1>
+                        <span>diopfadel06@gmail.com</span> <br>
+                        <span>778650096</span>
                         <div class="social-icons">
                            
                                 
-                                        <a href="https://web.facebook.com/profile.php?id=100009422180215"> <i class="fab fa-facebook-f" id="backFacebook"></i></a>
-                                   
-                                   
-                                         <a href="https://twitter.com/FadelDiop7"><i class="fab fa-twitter" id="backTwitter"></i></a>
-                                   
-                                        <a href="https://www.instagram.com/fadel_deve/"> <i class="fab fa-instagram" id="backInsta"></i></a>
-                                     
-                                        <a href="https://github.com/Fadel-Dev"> <i class="fab fa-github" id="backGit"></i></a>
+                            <ul class="list-inline">
+                                <li>                        <a href="https://www.linkedin.com/in/fadel-diop-a48b081a6/"> <i class="fab fa-linkedin-in" id="backFacebook"></i></a>
+        </li>           
+                                    <li>                        <a href="https://twitter.com/FadelDiop7"><i class="fab fa-twitter" id="backTwitter"></i></a>
+        </li>       
+                          
+                            <li>                       <a href="https://github.com/Fadel-Dev"> <i class="fab fa-github" id="backGit"></i></a>
+        </li>
+                               </ul>
+        
                                      
                     
                                
@@ -261,12 +275,9 @@ FreeCodeCamp.org Responsive-Web-Design 300hours
                         <a class="btn btn2" href="./images/Curriculum V.docx">Download CV</a>
                     </div>
                     <div class="contact-right">
-                        <form>
-                            <input type="text" name="Name" id="">
-                            <input type="email" name="email" id="">
-                            <textarea name="Message" id="" rows="6">Your Message</textarea> <br>
-                            <button class="btn btn2" type="submit">Envoyer</button>
-                        </form>
+                        <section class="contact-section">
+                            <a class="contact-link" href="mailto:diopfadel06@gmail.com">Contactez-Moi</a>
+                        </section>
                     </div>
                        
                 </div>
@@ -276,7 +287,10 @@ FreeCodeCamp.org Responsive-Web-Design 300hours
 
     <!-- FOOTRE -->
     <footer>
-        <div class="container">
+        <div class="footer-content">
+            <p>&copy; 2022 Fadel Diop</p>
+        </div>
+        <!-- <div class="container">
             <div class="row">
                 <div class="col-md-4">
                     <h3>About Me</h3>
@@ -292,15 +306,19 @@ FreeCodeCamp.org Responsive-Web-Design 300hours
                     <h3>Follow Me</h3>
                     <p>Follow me on social media to stay up to date on my work.</p>
                     <ul class="list-inline">
-                        <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    </ul>
+                        <li>                        <a href="https://www.linkedin.com/in/fadel-diop-a48b081a6/"> <i class="fab fa-linkedin-in" id="backFacebook"></i></a>
+</li>           
+                            <li>                        <a href="https://twitter.com/FadelDiop7"><i class="fab fa-twitter" id="backTwitter"></i></a>
+</li>       
+                  
+                    <li>                       <a href="https://github.com/Fadel-Dev"> <i class="fab fa-github" id="backGit"></i></a>
+</li>
+                       </ul>
+
                 </div>
             </div>
         </div>
-        
+         -->
 
     </footer>
 
